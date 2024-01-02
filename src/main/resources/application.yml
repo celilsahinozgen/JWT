@@ -1,0 +1,25 @@
+spring:
+  spring:
+    h2:
+      console:
+        enabled:
+        path: /h2
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driverClassName:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+security:
+  jwt:
+    secret: "celilcelilcelilcelilcelilcelilcelilcelilcelilcelilcelilcelilceli"
+
+
+
